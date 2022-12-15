@@ -428,6 +428,40 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* Customers styles */
+
+.customers {
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+
+  color: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--primary-brand);
+  border-color: var(--primary-brand);
+}
+
 /* FOOTER */
 .footer {
   padding: 100px 0;
