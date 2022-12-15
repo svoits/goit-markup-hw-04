@@ -247,10 +247,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-.advantage-description,
+.advantage-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .team-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 12px;
 }
 
 .team {
@@ -263,7 +268,7 @@ body {
 
 .advantages .list,
 .products .list,
-.team .list {
+.team-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--primary-margin-btwn-items));
@@ -279,13 +284,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 112px;
+  margin-bottom: 8px;
+
   background: #f4f4fd;
   border-radius: 4px;
   border-style: none;
-}
-
-.advantage {
-  margin-top: 8px;
 }
 
 /* What are we doing */
@@ -312,6 +315,26 @@ body {
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-background-color);
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+
+.team-social-icon {
+  fill: #f4f4fd;
 }
 
 /* PORTFOLIO.HTML */
@@ -374,6 +397,11 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.work-examples > .item:hover,
+.work-examples > .item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .example-description {
   padding: 32px 0 32px 16px;
   border: 0.5px solid #f4f4fd;
@@ -406,8 +434,13 @@ body {
   background-color: var(--dark);
 }
 
+.footer .container {
+  display: flex;
+}
+
 .logo-motto {
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -415,12 +448,47 @@ body {
   margin-right: 0;
 }
 
-.footer .logo,
-.motto {
+.footer .logo {
   color: var(--secondary-text-color);
 }
 
 .motto {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
+
+.social-title {
+  margin-bottom: 12px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon {
+  fill: #f4f4fd;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
 }
