@@ -440,12 +440,17 @@ body {
   gap: 24px;
 }
 
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+}
+
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
 
   color: #8e8f99;
   border: 1px solid #8e8f99;
